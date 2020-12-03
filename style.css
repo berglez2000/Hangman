@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(236, 199, 98);
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+  font-size: 3rem;
+}
+
+.hangman-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hangman-game div {
+  min-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hangman-game .keyboard {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(9, 65px);
+  grid-template-rows: repeat(3, 65px);
+}
+
+.keyboard > button {
+  cursor: pointer;
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  background: rgb(255, 255, 255, 0.9);
+  border: none;
+  outline: none;
+}
+
+.keyboard > button:hover {
+  background: rgb(255, 255, 255, 0.65);
+  transition: all 0.3s ease;
+}
+
+.picture img {
+  width: 300px;
+  height: 400px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 15vh;
+}
+
+section p {
+  font-size: 5rem;
+}
+
+.play-again {
+  font-size: 1.5rem;
+  margin-left: 10%;
+  cursor: pointer;
+  background: rgb(255, 255, 255, 0.9);
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.play-again:hover {
+  background: rgb(255, 255, 255, 0.65);
+  transition: all 0.3s ease;
+}
+
+.clicked {
+  pointer-events: none;
+  opacity: 0.3;
+  text-decoration: line-through;
+  transition: all 0.5s ease-in-out;
+}
